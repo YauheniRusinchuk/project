@@ -126,3 +126,10 @@
     text-transform: uppercase;
     box-shadow: 0 0 5px grey;
 }
+
+.btn_login {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6ec0f0;
+    font-weight: bold;
+}

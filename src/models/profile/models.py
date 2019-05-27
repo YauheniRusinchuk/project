@@ -13,6 +13,8 @@ class Profile(models.Model):
     avatar          = models.ImageField(upload_to='avatar/', blank=True)
 
 
-
     def __str__(self):
         return f"profile {self.user}"
+
+
+    

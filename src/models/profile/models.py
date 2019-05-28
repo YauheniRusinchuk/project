@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django.shortcuts import reverse
 
 
 User = get_user_model()
@@ -15,6 +16,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"profile {self.user}"
-
-
-    

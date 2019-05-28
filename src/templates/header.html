@@ -1,7 +1,11 @@
 <div class="header_container">
     {% if user.is_authenticated %}
         <div class="user_info">
-            <img class='your_ava' src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="30" height="30" alt="">
+            {% if user.profile.avatar %}
+                <a href=""><img class='your_ava' src="{{user.profile.avatar.url}}" width="30" height="30" alt=""></a>
+            {% else %}
+                <a href=""><img class='your_ava' src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="30" height="30" alt=""></a>
+            {% endif %}
              <a href="" class='your_notificaition'>уведомления</a>
              <a href="" class='your_message'>сообщения</a>
         </div>

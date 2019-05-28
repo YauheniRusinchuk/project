@@ -1,6 +1,6 @@
 <div class="login_container">
 
-    <p>Войти в профиль</p>
+    <p>Войти в профиль или <a class='link_reg' href="{% url 'home:register_page:new_user' %}">зарегистрируйтесь</a></p>
 
     <form class='form_login' action="{% url 'home:login_page:check_login' %}" method="POST">{% csrf_token %}
         <input class='login_email' type="email" placeholder="Почта ..." name="email" value="">

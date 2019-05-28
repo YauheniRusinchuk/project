@@ -218,3 +218,9 @@
     cursor: pointer;
 
 }
+
+.link_reg {
+    font-size: 12px;
+    color: grey;
+    text-decoration: none;
+}

@@ -4,7 +4,7 @@
 
     <div class="register_container">
         <p>Регистрация</p>
-        <form class="register_form">
+        <form method="POST" class="register_form">{% csrf_token %}
             <input class='username' type="text" placeholder="Ник ..." name="" value="">
             <input class='email_register' type="email" placeholder="Почта ..." name="" value="">
             <input class='password_register' type="password" placeholder="Пароль ..." name="" value="">

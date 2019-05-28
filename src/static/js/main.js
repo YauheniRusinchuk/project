@@ -9,7 +9,6 @@ $(function(){
         e.preventDefault();
         console.log("SUBMIT")
         $.ajax({
-
             url: $(this).attr('action'),
             type: 'POST',
             data: {
@@ -19,10 +18,10 @@ $(function(){
                 csrfmiddlewaretoken : $('input[name=csrfmiddlewaretoken]').val(),
             },
             success: function(res) {
-                console.log("GOOD");
+                $('.login_container').slideDown();
             },
             error: function(err) {
-                console.log("ERROR");
+                $('.email_register').css('border', '1px solid red');
             }
         })
     })

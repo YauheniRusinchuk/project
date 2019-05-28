@@ -3,6 +3,14 @@
 
 {% block content %}
 
-    <h4>DETAIL PROFILE</h4>
+    <div class="detail_profile">
+        {% if object.avatar %}
+            <img src="{{object.avatar.url}}" width="100" height="100" alt="">
+        {% else %}
+            <img class='your_ava' src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="100" height="100" alt="">
+        {% endif %}
+        <p>{{object.username}}</p>
+        <p class='description'>{{object.description}}</p>
+    </div>
 
 {% endblock %}

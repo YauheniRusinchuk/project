@@ -254,3 +254,22 @@
     color: #6ec0f0;
     margin-top: 5px;
 }
+
+.detail_profile {
+    text-align: center;
+    padding: 50px;
+}
+
+.detail_profile img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px grey;
+}
+
+.detail_profile p {
+    font-size: 22px;
+}
+
+.detail_profile .description {
+    font-size: 14px;
+    color: grey;
+}

@@ -224,3 +224,33 @@
     color: grey;
     text-decoration: none;
 }
+
+
+.profiles_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profiles_container .item {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.profiles_container .item img {
+    border-radius: 50%;
+
+}
+
+.profiles_container .item a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6ec0f0;
+    margin-top: 5px;
+}

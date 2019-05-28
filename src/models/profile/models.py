@@ -16,3 +16,7 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"profile {self.user}"
+
+
+    def get_absolute_url(self):
+        return reverse('home:profile:detail_profile', kwargs={'pk': self.pk})

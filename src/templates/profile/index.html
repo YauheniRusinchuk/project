@@ -3,6 +3,17 @@
 
 {% block content %}
 
-    <h3>LISTPROFILES</h3>
+    <div class="profiles_container">
+        {% for profile in object_list %}
+            <div class="item">
+                {% if profile.avatar %}
+                <img src="{{profile.avatar.url}}" width="50" height="50" alt="">
+                {% else %}
+                <img class='your_ava' src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="50" height="50" alt="">
+                {% endif %}
+                <a href="{{profile.get_absolute_url}}">{{profile.username}}</a>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.views import View
-from django.shortcuts import redirect
+from django.shortcuts import redirect, HttpResponseRedirect
 from django.contrib.auth import authenticate, login
 
 
@@ -11,6 +11,6 @@ class LoginView(View):
         user = authenticate(request, email=email, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home:home_page')
+            return HttpResponseRedirect('/')
         else:
-            return redirect('home:home_page')
+            return redirect('home_home_page')

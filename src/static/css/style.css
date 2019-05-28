@@ -188,6 +188,7 @@
 
 .register_container p {
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .register_container form {

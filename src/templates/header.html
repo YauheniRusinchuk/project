@@ -20,7 +20,7 @@
     <div class="menu_container">
         <a class='new_btn' href="#">обьявление</a>
         {% if user.is_authenticated %}
-            <a href="#">выйти</a>
+            <a href="{% url 'home:exit:exit_page' %}">выйти</a>
         {% endif %}
     </div>
 

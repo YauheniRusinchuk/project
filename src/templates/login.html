@@ -2,9 +2,9 @@
 
     <p>Войти в профиль</p>
 
-    <form class="">
-        <input type="email" placeholder="Почта ..." name="" value="">
-        <input type="password" placeholder="Пароль ..." name="" value="">
+    <form action="{% url 'home:login_page:check_login' %}" method="POST">{% csrf_token %}
+        <input type="email" placeholder="Почта ..." name="email" value="">
+        <input type="password" placeholder="Пароль ..." name="password" value="">
         <button type="submit" name="button">Войти</button>
     </form>
 

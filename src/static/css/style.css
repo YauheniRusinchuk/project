@@ -135,12 +135,13 @@
 }
 
 .login_container {
+    display: none;
     position: absolute;
     top: 70px;
     left: 35%;
     width: 400px;
     background-color: white;
-    box-shadow: 0 0 20px #6ec0f0;
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
     z-index: 10;
     padding: 50px;
@@ -161,8 +162,8 @@
 .login_container form input {
     margin: 10px;
     padding: 3px 5px;
-    border: 2px solid #6ec0f0;
-    border-radius: 20px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
     width: 100%;
     outline: none;
     background-color: white;

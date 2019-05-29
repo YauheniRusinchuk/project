@@ -5,10 +5,19 @@ from django.shortcuts import reverse
 
 class Announcement(models.Model):
 
+    FIELDS          = (
+        ('поиск','Партнер'),
+        ('идеи','Идеи'),
+        ('работа', 'Работа'),
+    )
+
+
+
     author  = models.ForeignKey(Profile, on_delete=models.CASCADE)
     title   = models.CharField(max_length=300, blank=False)
     text    = models.TextField(blank=True)
     created = models.DateTimeField(auto_now_add=True)
+    type    = models.CharField(max_length=100,choices=FIELDS, blank=True)
 
     class Meta:
         ordering = ['-created']

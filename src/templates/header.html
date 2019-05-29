@@ -16,9 +16,9 @@
 
     <div class="other_info">
         <a href="{% url 'home:announcement:announcement_list' %}">все записи</a>
-        <a href="#">поиск партнера</a>
-        <a href="#">обсуждение идей</a>
-        <a href="#">подработки</a>
+        <a href="{% url 'home:category:partner_page' %}">поиск партнера</a>
+        <a href="{% url 'home:category:ideas_page' %}">обсуждение идей</a>
+        <a href="{% url 'home:category:jobs_page' %}">подработки</a>
         <a href="{% url 'home:profile:list_profile' %}">люди</a>
     </div>
 

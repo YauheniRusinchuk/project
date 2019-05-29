@@ -358,3 +358,9 @@
     font-size: 12px;
     font-weight: bold;
 }
+
+.item .type_post {
+    padding: 3px 20px;
+    border-radius: 3px;
+    color: white;
+}

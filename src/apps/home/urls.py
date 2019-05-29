@@ -4,6 +4,7 @@ from .views import index
 app_name = 'home'
 
 urlpatterns = [
+    path('category/', include('src.apps.category.urls', namespace='category')),
     path('all/', include('src.apps.announcement.urls', namespace='announcement')),
     path('profiles/', include('src.apps.profile.urls', namespace='profile')),
     path('register/', include('src.apps.register.urls', namespace='register_page')),

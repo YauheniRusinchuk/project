@@ -4,8 +4,17 @@
 {% block content %}
 
     <div class="detail_post">
-        <p>{{object.title}}</p>
+        <h5>{{object.title}}</h5>
         <p>{{object.text}}</p>
+        <span>{{ object.created|date:"d-m-y" }}</span>
+        <div class="author_post">
+            {% if object.profile.avatar %}
+                <img src="{{object.profile.avatar.url}}" width="20" height="20" alt="">
+            {% else %}
+                <img src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="20" height="20" alt="">
+            {% endif %}
+            <a href="{{object.author.get_absolute_url}}">{{object.author.username}}</a>
+        </div>
     </div>
 
 {% endblock %}

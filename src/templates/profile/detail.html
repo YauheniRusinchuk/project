@@ -18,7 +18,7 @@
             {% if object.announcement_set.all %}
                 {% for i in object.announcement_set.all %}
                     <div class="post_item">
-                        <a href="">{{i.title}}</a>
+                        <a href="{{i.get_absolute_url}}">{{i.title}}</a>
                     </div>
                 {% endfor %}
             {% else %}

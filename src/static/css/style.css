@@ -312,6 +312,10 @@
     color: grey;
 }
 
+.detail_post span {
+    color: grey;
+    font-size: 12px;
+}
 
 .lists .item .author_info {
     display: flex;
@@ -329,4 +333,38 @@
     color: #6ec0f0;
     font-size: 12px;
 
+}
+
+.detail_post {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.detail_post h5 {
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.detail_post p {
+    color: grey;
+}
+
+
+.detail_post .author_post {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.detail_post .author_post img {
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.detail_post .author_post a {
+    text-decoration: none;
+    color: #6ec0f0;
+    font-size: 12px;
+    font-weight: bold;
 }

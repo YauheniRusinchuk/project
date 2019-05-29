@@ -5,9 +5,16 @@
     <div class="lists">
         {% for object in object_list %}
             <div class="item">
-                <a href="">{{object.title}}</a>
+                <a href="{{object.get_absolute_url}}">{{object.title}}</a>
                 <p>{{object.text}}</p>
-                <p>{{object.author}}</p>
+                <div class="author_info">
+                    {% if object.profile.avatar %}
+                        <img src="{{object.profile.avatar.url}}" width="20" height="20" alt="">
+                    {% else %}
+                        <img src="https://pp.userapi.com/c845521/v845521265/1958c1/Pwk8qgTbAog.jpg" width="20" height="20" alt="">
+                    {% endif %}
+                    <a href="{{object.author.get_absolute_url}}">{{object.author.username}}</a>
+                </div>
             </div>
         {% endfor %}
     </div>

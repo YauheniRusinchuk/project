@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import ListAnnouncement
+from .views import ListAnnouncement, DetailView
 
-app_name = 'accouncement'
+app_name = 'announcement'
 
 urlpatterns = [
-    path('', ListAnnouncement.as_view(), name='accouncement_list'),
+    path('article<int:pk>/', DetailView.as_view(), name='announcement_detail'),
+    path('', ListAnnouncement.as_view(), name='announcement_list'),
 ]

@@ -1,5 +1,7 @@
 from django.db import models
 from src.models.profile.models import Profile
+from django.shortcuts import reverse
+
 
 class Announcement(models.Model):
 
@@ -8,5 +10,10 @@ class Announcement(models.Model):
     text    = models.TextField(blank=True)
 
 
+
     def __str__(self):
         return f"{self.title}"
+
+
+    def get_absolute_url(self):
+        return reverse('home:announcement:announcement_detail', kwargs={"pk": self.pk})

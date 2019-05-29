@@ -273,3 +273,17 @@
     font-size: 14px;
     color: grey;
 }
+
+.profile_posts {
+    margin: 50px;
+}
+
+.profile_posts .post_item {
+    margin: 20px;
+}
+
+.profile_posts .post_item a {
+    text-decoration: none;
+    color: #6ec0f0;
+    font-weight: bold;
+}

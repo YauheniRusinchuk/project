@@ -11,6 +11,21 @@
         {% endif %}
         <p>{{object.username}}</p>
         <p class='description'>{{object.description}}</p>
+
+
+
+        <div class="profile_posts">
+            {% if object.announcement_set.all %}
+                {% for i in object.announcement_set.all %}
+                    <div class="post_item">
+                        <a href="">{{i.title}}</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Пока нету объявлений</p>
+            {% endif %}
+        </div>
+
     </div>
 
 {% endblock %}

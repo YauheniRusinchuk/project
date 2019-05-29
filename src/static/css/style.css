@@ -291,6 +291,15 @@
     color: grey;
 }
 
+.lists .item .type_post {
+    border: 2px solid #b0b030;
+    color: white;
+    background-color: #b0b030;
+    padding: 3px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
 .lists .item a {
     text-decoration: none;
     color: black;
@@ -357,10 +366,4 @@
     color: #6ec0f0;
     font-size: 12px;
     font-weight: bold;
-}
-
-.item .type_post {
-    padding: 3px 20px;
-    border-radius: 3px;
-    color: white;
 }

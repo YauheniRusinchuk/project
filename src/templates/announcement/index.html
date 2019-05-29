@@ -7,6 +7,7 @@
             <div class="item">
                 <a href="{{object.get_absolute_url}}">{{object.title}}</a>
                 <p>{{object.text}}</p>
+                <span>{{ object.created|date:"d-m-y" }}</span>
                 <div class="author_info">
                     {% if object.profile.avatar %}
                         <img src="{{object.profile.avatar.url}}" width="20" height="20" alt="">

@@ -31,26 +31,14 @@
     text-decoration: none;
     color: #6ec0f0;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: normal;
     padding: 3px 10px;
-    border: 2px solid #6ec0f0;
+    border: 1px solid #6ec0f0;
     border-radius: 20px;
     text-transform: uppercase;
     /* box-shadow: 0 0 5px #6ec0f0; */
 }
 
-.header_container .user_info .your_message {
-    text-decoration: none;
-    color: #6ec0f0;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 3px 10px;
-    border: 2px solid #6ec0f0;
-    border-radius: 20px;
-    text-transform: uppercase;
-    /* box-shadow: 0 0 5px #6ec0f0; */
-
-}
 
 .header_container .other_info {
     width: 40%;
@@ -88,8 +76,8 @@
     background-color: #6ec0f0;
     padding: 3px 20px;
     border-radius: 20px;
-    border: 2px solid #6ec0f0;
-    font-weight: bold;
+    border: 1px solid #6ec0f0;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -256,6 +244,8 @@
 }
 
 .detail_profile {
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
     padding: 50px;
 }

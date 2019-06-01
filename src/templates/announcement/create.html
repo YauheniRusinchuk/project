@@ -4,7 +4,8 @@
 {% block content %}
 
 <form method="post">{% csrf_token %}
-    {{ form.as_p }}
+    <input type="text" placeholder="Заголовок" name="title" value="">
+    <textarea name='text' placeholder="Текст"></textarea>
     <input type="submit" value="Добавить">
 </form>
 

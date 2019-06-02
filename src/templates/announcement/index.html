@@ -6,7 +6,7 @@
         {% for object in object_list %}
             <div class="item">
                 <a href="{{object.get_absolute_url}}">{{object.title}}</a>
-                <p>{{object.text}}<br/><span class='type_post'>{{object.type}}</span></p>
+                <p>{{object.text}}<br/></p>
                 <span>{{ object.created|date:"d-m-y" }}</span>
                 <div class="author_info">
                     {% if object.profile.avatar %}

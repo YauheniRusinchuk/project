@@ -5,9 +5,11 @@ from src.models.announcement.models import Announcement
 from django.views.generic.detail import DetailView
 
 
+
 class CreateAnnouncement(View):
 
     def get(self, request, *args, **kwargs):
+        #form = CreateForm()
         return render(request, 'announcement/create.html', {})
 
     def post(self, request, *args, **kwargs):
